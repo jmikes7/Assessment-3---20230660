@@ -1,0 +1,93 @@
+nnn code #1
+____________________________________________________________________
+# the program is calculating 
+# nnn + nn + n
+n = input("Enter any digit")
+# print(type(n))
+
+nn = (n + n)
+nnn = (n + n + n)
+result = int(n) + int(nn) + int(nnn);
+
+print("nnn + nn + n = ", result)
+print(nnn + " + " + nn + " + " + n + " = ", result)
+print(f"{n} + {nn} + {nnn} = {result}")
+
+lists code #2
+____________________________________________________________________
+import random
+# # lists, arrays
+# # empty list
+# fruits = []; 
+# fruits = ["Apple", "Pineapple", "Banana", "Lemon"];
+# # display list
+# print(fruits);
+# # display element of the list
+# print(fruits[1])
+# print(fruits[0])
+
+# # add elements to list
+# fruits.append("Orange")
+# fruits.append("Pear")
+# fruits.append("Apricot");
+# print(fruits)
+
+# # delete the element
+# fruits.pop(1)
+# print(fruits)
+
+# select all elements one by one
+# for fr in fruits:
+#     print(fr)
+
+# generate random numbers
+numbers = []
+for i in range(100):
+    numbers.append(random.randint(0, 1000))
+
+print(numbers)
+
+# select all numbers greate than 500
+for n in numbers:
+    if n > 500:
+        print(n)
+
+# find the max number
+# max_number = 0;
+# for n in numbers:
+#     if n > max_number:
+#         max_number = n;
+
+max_number = max(numbers);
+min_number = min(numbers)
+
+
+print("max number = ", max_number);
+print("min number = ", min_number);
+
+# display elements
+
+login code #3
+________________________________________________________________________
+username = input("Enter the username: ")
+password = input("Enter the password: ")
+
+users = ["Marina", "Fiona", "Adam"]
+passwords = ["0000", "1111", "1234"]
+
+# if (username == "Marina" and password == "0000") or (username == "Fiona" and password == "1111") or (username == "Adam" and password == "1234"):
+#     print("Login successful")
+# else:
+#     print("Password or login is incorrect")
+RED = "\033[32m";
+GREEN = "\033[31m";
+RESET = "\033[0m";
+
+
+for i in range(len(users)):
+    if username == users[i] and password == passwords[i]:
+        print(RED + "login successful" + RESET)
+        exit();
+
+print(GREEN + "Password or login is incorrect" + RESET);
+
